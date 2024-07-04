@@ -3,6 +3,9 @@ import random
 def toss_coin():
     return "Heads" if random.choice([True, False]) else "Tails"
     
+name = input("Who are you?\n> ")
+print(f"Hello, {name}!")
+
 print("Tossing a coin...")
 results = [toss_coin() for _ in range(3)]
     
