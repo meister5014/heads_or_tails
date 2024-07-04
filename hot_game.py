@@ -2,7 +2,10 @@ import random
 
 def toss_coin():
     return "Heads" if random.choice([True, False]) else "Tails"
-    
+
+user_name = input("お名前は何ですか？\n> ")
+print(f"こんにちは、{user_name}さん！")
+
 print("コインを投げています...")
 results = [toss_coin() for _ in range(3)]
 heads_count = results.count("Heads")
